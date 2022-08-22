@@ -1,0 +1,164 @@
+.margin1 {
+    margin-left: 600px;
+    margin-right: 3px;
+}
+
+.margin2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.margin3 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.margin4 {
+    margin-bottom: 5px;
+}
+
+.margin5 {
+    margin-bottom: 30px;
+}
+
+.margin6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.margin7 {
+    margin-right: 50px;
+}
+
+.margin8 {
+    margin-right: 155px;
+}
+
+.margin9 {
+    margin-left: 10px;
+}
+
+.margin10 {
+    margin-right: 30px;
+}
+
+.text1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.text3 {
+    color: darkblue;
+}
+
+.picture {
+    width: 30%
+}
+
+.picture1 {
+    width: 10%;
+    height: 10%;
+}
+
+.picture2 {
+    width: 100%;
+    height: 100%;
+}
+
+.picture3 {
+    width: 15%
+}
+
+.color {
+    color: black;
+}
+
+.color2 {
+    background-color: lightgray;
+}
+
+.color3 {
+    background-color: darkred;
+}
+
+.color4 {
+    background-color: whitesmoke;
+}
+
+.color5 {
+    color: darkred;
+}
+
+.color6 {
+    color: white;
+}
+
+.color7 {
+    color: darkgray;
+}
+
+.color8 {
+    background-color: black;
+}
+
+.position1 {
+    text-align: center;
+}
+
+.position2 {
+    text-align: left;
+}
+
+.position3 {
+    padding-left: 300px;
+}
+
+.position4 {
+    padding-left: 150px;
+    margin-top: 50px;
+}
+
+.position5 {
+    text-align: right;
+}
+
+.button1 {
+    background-color: orange;
+}
+
+.button2 {
+    background-color: darkgray;
+}
+
+.button3 {
+    background-color: darkred;
+}
+
+.padding1 {
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.padding2 {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.padding3 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.padding4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inline {
+    display: inline;
+}
