@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'view.js') }}"></script>
+
+<script>
+    let d = {{d|tojson}}
+    let stats = d.stats
+    let team = d.all_star_team
+    let pos = d.position
+    let id = d.id
+    console.log(id)
+</script>
+
+
+<div class="container color4">
+
+    <br>
+
+    <div class="row">
+        <div class="col-7">
+            <span class="text1 margin3 color5 position2">{{d.name}}</span>
+            <span class="margin3 color5 position3">{{d.team}}</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-7">
+            <img src={{d.image}} class="picture2" alt='{{d.name}}'>
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12 color7 position4">
+                    All-Star team:&nbsp;&nbsp;&nbsp;
+                    <button id="b1" class="btn btn-primary">{{d.all_star_team}}</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 color7 position4">
+                    Position:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="b2" class="btn btn-primary">{{d.position}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-7">
+            <div class="color7">Summary:</div>
+            <div class="color5">{{d.summary}}</div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-3">
+            <span class="color7">Year of Birth: </span>
+            <span class="color5">{{d.YoB}}</span>
+        </div>
+        <div class="col-2">
+            <span class="color7">Height: </span>
+            <span class="color5">{{d.height}} m</span>
+        </div>
+        <div class="col-2">
+            <span class="color7">Weight: </span>
+            <span class="color5">{{d.weight}} kg</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-7">
+            <div id="st" class="color7">
+                Stats for last 3 seasons:
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 position5">
+            <button id="b3" class="btn btn-primary button2">edit</button>
+        </div>
+    </div>
+
+    <br><br>
+
+</div>
+
+
+
+{% endblock %}

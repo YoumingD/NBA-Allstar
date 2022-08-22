@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+
+<script>
+    let data = {{data|tojson}}
+    let name1 = data[1].name
+    let name2 = data[2].name
+    let name3 = data[3].name
+    let p1 = data[1].image
+    let p2 = data[2].image
+    let p3 = data[3].image
+    console.log(data)
+</script>
+
+<div class="container">
+    <div class="row color2">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 text2 position1 padding1">
+                    NBA ALL-STARS 2022
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 position1 padding2 color5">
+                    Fans of NBA!
+                    <br>
+                    This is a site for you to explore information about players who played in the All-Stars for 2022.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row color4">
+        <div class="row padding3">
+            <div class="col-6">
+                <div class="row margin4">
+                    <div class="col-12 text1 position1">
+                        <a href = '/search/team lebron' class='color5'>Team LeBron</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href = '/search/team lebron'>
+                            <img src="https://cdn.nba.com/manage/2022/02/lebron022022-1.jpg"
+                                 alt="team lebron" class="picture2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row margin4">
+                    <div class="col-12 text1 position1">
+                        <a href = '/search/team durant' class='color5'>Team Durant</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href = '/search/team durant'>
+                            <img src="https://cdn.nba.com/manage/2022/02/durant022022.jpg"
+                                 alt="team durant" class="picture2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row color3 padding4">
+        <div class="col-12 text1 color6">
+            Most popular players:
+        </div>
+    </div>
+
+    <div class="row color4">
+        <div class="col-4" id="update1"></div>
+        <div class="col-4" id="update2"></div>
+        <div class="col-4" id="update3"></div>
+    </div>
+</div>
+
+
+{% endblock %}

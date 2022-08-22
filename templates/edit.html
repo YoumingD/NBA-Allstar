@@ -1,0 +1,277 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'edit.js') }}"></script>
+
+<script>
+    let d = {{d|tojson}}
+    let id = d.id
+</script>
+
+<div class="container">
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-12 text1 color5 margin7">
+            Edit data for player {{d.name}}
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit name:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" value='{{d.name}}' size="50" id="text1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input1"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit team:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" value='{{d.team}}' size="50" id="text2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input2"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit image:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <textarea cols="50" rows="2" id="text3">{{d.image}}</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input3"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit summary:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <textarea cols="50" rows="5" id="text4">{{d.summary}}</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input4"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit year of birth:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" value='{{d.YoB}}' size="50" id="text5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input5"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit height:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" value='{{d.height}}' size="50" id="text6"> m
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input6"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit weight:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" value='{{d.weight}}' size="50" id="text7"> kg
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input7"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit stats:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" value='{{d.stats[0]}}' size="10" id="text8_1" class="margin7">
+                    <input type="text" value='{{d.stats[1]}}' size="10" id="text8_2" class="margin7">
+                    <input type="text" value='{{d.stats[2]}}' size="10" id="text8_3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input8"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit all-star team:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" value='{{d.all_star_team}}' size="50" id="text9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input9"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Edit position:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" value='{{d.position}}' size="50" id="text10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input10"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="https://img.icons8.com/external-ios-line-2px-amoghdesign/30/000000/
+            external-edit-multimedia-line-30px-ios-line-2px-amoghdesign.png" alt="edit_icon"/>
+            <span class="color7">edit</span>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-2">
+            <button id="b1" class="btn btn-primary button3">Submit</button>
+        </div>
+        <div class="col-2">
+            <button id="b2" class="btn btn-primary button3">Discard changes</button>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div id="dialog" title="Discard changes">
+        <div>Do you want to discard changes?</div>
+        <br>
+        <button id="b3" class="btn btn-primary button3 margin8">Yes</button>
+        <button id="b4" class="btn btn-primary button3">No</button>
+    </div>
+
+</div>
+
+
+{% endblock %}

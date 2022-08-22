@@ -1,0 +1,223 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'add.js') }}"></script>
+
+
+<div class="container">
+
+    <br>
+
+    <div class="row" id="success">
+        <div class="col-12">
+            <span class="text1 color5 margin5 margin10">New item successfully created.</span>
+            <button id="sub" class="btn btn-primary button3">see it here</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-12 text1 color5 margin7">
+            Add a player portfolio
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Name:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" size="50" id="text1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input1"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Team:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" size="50" id="text2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input2"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Image link:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <textarea cols="50" rows="2" id="text3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Summary:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <textarea cols="50" rows="4" id="text4"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input4"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Year of birth:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" size="50" id="text5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input5"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Height:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" size="50" id="text6"> m
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input6"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Weight:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" size="50" id="text7"> kg
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input7"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Stats:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" size="10" id="text8_1" class="margin7">
+                    <input type="text" size="10" id="text8_2" class="margin7">
+                    <input type="text" size="10" id="text8_3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input8"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            All-star team:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" size="50" id="text9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input9"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-2 color5">
+            Position:
+        </div>
+        <div class="col-5">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" size="50" id="text10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="input10"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="row">
+        <div class="col-2">
+            <button id="b1" class="btn btn-primary button3">Submit</button>
+        </div>
+    </div>
+
+    <br><br><br>
+
+</div>
+
+{% endblock %}
